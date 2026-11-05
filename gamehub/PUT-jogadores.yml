@@ -1,0 +1,22 @@
+info:
+  name: PUT-jogadores
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogadores/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Kaue",
+        "email": "Kauedivertido@gmail.com",
+        "nickname": "Kaue_Ref"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
