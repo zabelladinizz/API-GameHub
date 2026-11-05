@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as estudioController from "../controllers/estudioController.js";
 import { validarId } from "../middlewares/validarId.js";
+import * as estudioController from "../controllers/estudioController.js";
 
 
 const router = Router();

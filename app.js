@@ -9,9 +9,10 @@ import cors from "cors";
 import conexao from "./db.js";
 
 import {textoValido, inteiroPositivo} from "./src/utils/validacoes.js";
-import { validarId } from "./src/middlewares/validarid.js";
+import { validarId } from "../src/middlewares/validarid.js";
 import { tratarErro } from "./src/middlewares/tratarErro.js";
 import estudioRoutes from "./src/routes/estudioRoute.js";
+import jogadoresRoutes from "./src/routes/jogadoresRoutes.js";
 
 const app = express();
 const PORTA = Number(process.env.PORTA || 3000);
